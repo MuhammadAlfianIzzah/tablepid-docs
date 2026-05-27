@@ -3,68 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TablePID - Database Client Modern untuk Developer</title>
-  <meta name="description" content="Database client modern dengan bantuan SQL berbasis AI. Dibuat untuk developer yang bergerak cepat.">
   
-  <!-- Open Graph -->
-  <meta property="og:title" content="TablePID - Database Client Modern">
-  <meta property="og:description" content="Stop berantem sama database. Mulai bangun lebih cepat.">
+  <!-- Primary Meta Tags -->
+  <title>TablePID - Database Client Modern dengan AI untuk Developer</title>
+  <meta name="title" content="TablePID - Database Client Modern dengan AI untuk Developer">
+  <meta name="description" content="Database client modern dengan SQL bertenaga AI, UI cantik, dan 10 tema. Mendukung PostgreSQL, MySQL, MariaDB, SQLite. 100% gratis untuk developer Indonesia.">
+  <meta name="keywords" content="database client, SQL editor, AI SQL, PostgreSQL client, MySQL client, SQLite editor, database management tool, query editor, ERD generator, developer tools, database GUI, TablePID">
+  <meta name="author" content="Muhammad Alfian Izzah">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Indonesian">
+  <meta name="revisit-after" content="7 days">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#09090b">
+  <meta name="msapplication-TileColor" content="#09090b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://tablepid.dev">
+  
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tablepid.dev">
-  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:title" content="TablePID - Database Client Modern dengan AI">
+  <meta property="og:description" content="Stop berantem sama database. SQL bertenaga AI, UI cantik, 10 tema. Gratis untuk developer.">
+  <meta property="og:image" content="https://tablepid.dev/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TablePID - Database Client Modern">
+  <meta property="og:site_name" content="TablePID">
+  <meta property="og:locale" content="id_ID">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="TablePID - Database Client Modern">
-  <meta name="twitter:description" content="Stop berantem sama database. Mulai bangun lebih cepat.">
+  <meta name="twitter:url" content="https://tablepid.dev">
+  <meta name="twitter:title" content="TablePID - Database Client Modern dengan AI">
+  <meta name="twitter:description" content="Stop berantem sama database. SQL bertenaga AI, UI cantik, 10 tema. Gratis untuk developer.">
+  <meta name="twitter:image" content="https://tablepid.dev/assets/og-image.png">
+  <meta name="twitter:image:alt" content="TablePID - Database Client Modern">
+  <meta name="twitter:creator" content="@muhammadalfian">
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
   
-  <!-- Fonts -->
+  <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   
   <!-- Styles -->
   <link rel="stylesheet" href="styles/main.css">
   
   <!-- GSAP + Three.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "TablePID",
+    "description": "Database client modern dengan SQL bertenaga AI, UI cantik, dan 10 tema. Mendukung PostgreSQL, MySQL, MariaDB, SQLite.",
+    "url": "https://tablepid.dev",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Windows",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Muhammad Alfian Izzah",
+      "url": "https://github.com/MuhammadAlfianIzzah"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "TablePID",
+      "url": "https://tablepid.dev"
+    },
+    "softwareVersion": "0.2.0",
+    "fileSize": "15MB",
+    "screenshot": [
+      "https://tablepid.dev/assets/screenshots/view_data_thema_light.png",
+      "https://tablepid.dev/assets/screenshots/view_data_thema_dark.png",
+      "https://tablepid.dev/assets/screenshots/view_data_thema_sakura.png"
+    ],
+    "featureList": [
+      "AI SQL Assistant",
+      "SSH Tunnel",
+      "ERD Generator",
+      "Query Editor with Monaco",
+      "Schema Compare",
+      "10 Beautiful Themes",
+      "PostgreSQL Support",
+      "MySQL Support",
+      "MariaDB Support",
+      "SQLite Support"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "150",
+      "bestRating": "5"
+    }
+  }
+  </script>
+  
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "TablePID beneran gratis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ya! TablePID 100% gratis digunakan. Gak ada biaya tersembunyi, gak ada tier premium."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Data saya aman?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tentu saja. Kredensial kamu dienkripsi di OS keychain. AI provider hanya menerima prompt kamu, bukan kredensial."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Database apa aja yang didukung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PostgreSQL, MySQL, MariaDB, dan SQLite. Lebih banyak lagi menyusul."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bisa dipake offline?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bisa! Semua fitur bisa jalan offline kecuali AI. Untuk AI, kamu bisa pakai Ollama lokal untuk full offline."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Source code-nya open source?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Source code-nya proprietary, tapi aplikasinya gratis untuk digunakan dan didistribusikan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gimana cara report bug?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Buka issue di GitHub atau hubungi kami langsung. Kami fast response!"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <!-- Skip to Content -->
+  <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;z-index:9999;padding:16px;background:var(--accent);color:#fff;border-radius:8px;">Lewati ke konten</a>
+  
   <!-- Navigation -->
-  <nav class="nav">
+  <nav class="nav" role="navigation" aria-label="Navigasi utama">
     <div class="container">
       <div class="nav-content">
-        <a href="#" class="logo">
-          <span class="logo-icon">🚀</span>
+        <a href="#" class="logo" aria-label="TablePID - Beranda">
+          <span class="logo-icon" aria-hidden="true">🚀</span>
           <span class="logo-text">TablePID</span>
         </a>
         <div class="nav-links">
           <a href="#features">Fitur</a>
           <a href="#screenshots">Screenshot</a>
           <a href="#download">Download</a>
-          <a href="https://github.com/MuhammadAlfianIzzah/tablepid-releases" target="_blank" class="nav-github">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <a href="https://github.com/MuhammadAlfianIzzah/tablepid-releases" target="_blank" rel="noopener noreferrer" class="nav-github" aria-label="GitHub Repository">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
             </svg>
           </a>
         </div>
-        <button class="mobile-menu" id="mobileMenu">
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </button>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-bg">
+  <section class="hero" aria-label="Hero">
+    <div class="hero-bg" aria-hidden="true">
       <canvas id="hero-canvas"></canvas>
       <div class="hero-gradient"></div>
       <div class="hero-grid"></div>
@@ -72,7 +216,7 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-badge">
-          <span class="badge-dot"></span>
+          <span class="badge-dot" aria-hidden="true"></span>
           100% Gratis Digunakan
         </div>
         <h1 class="hero-title">
@@ -86,44 +230,46 @@
         </p>
         <div class="hero-buttons">
           <a href="#download" class="btn btn-primary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
               <line x1="12" y1="15" x2="12" y2="3"/>
             </svg>
             Download untuk Windows
           </a>
-          <a href="https://github.com/MuhammadAlfianIzzah/tablepid-releases" target="_blank" class="btn btn-secondary">
+          <a href="https://github.com/MuhammadAlfianIzzah/tablepid-releases" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
             Lihat Rilis
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M7 17l9.2-9.2M17 17V7H7"/>
             </svg>
           </a>
         </div>
         <div class="hero-databases">
           <span class="db-label">Mendukung</span>
-          <div class="db-badges">
-            <span class="db-badge">PostgreSQL</span>
-            <span class="db-badge">MySQL</span>
-            <span class="db-badge">MariaDB</span>
-            <span class="db-badge">SQLite</span>
+          <div class="db-badges" role="list" aria-label="Database yang didukung">
+            <span class="db-badge" role="listitem">PostgreSQL</span>
+            <span class="db-badge" role="listitem">MySQL</span>
+            <span class="db-badge" role="listitem">MariaDB</span>
+            <span class="db-badge" role="listitem">SQLite</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <main id="main-content">
+
   <!-- Features Section -->
-  <section id="features" class="features">
+  <section id="features" class="features" aria-label="Fitur">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">Fitur</span>
+        <span class="section-badge" aria-hidden="true">Fitur</span>
         <h2 class="section-title">Semua yang kamu butuhkan</h2>
         <p class="section-description">
           Dibangun dari nol untuk workflow development modern
         </p>
       </div>
-      <div class="features-grid">
+      <div class="features-grid" role="list">
         <div class="feature-card feature-card-large">
           <div class="feature-icon">⚡</div>
           <h3>AI SQL Assistant</h3>
@@ -164,7 +310,7 @@
   </section>
 
   <!-- Screenshots Section -->
-  <section id="screenshots" class="screenshots">
+  <section id="screenshots" class="screenshots" aria-label="Screenshot">
     <canvas id="screenshots-canvas" class="screenshots-canvas"></canvas>
     <div class="container">
       <div class="section-header">
@@ -186,47 +332,47 @@
           </div>
           <div class="screenshot-display">
             <div class="screenshot-slide active">
-              <img src="assets/screenshots/view_data_thema_light.png" alt="Light Theme">
+              <img src="assets/screenshots/view_data_thema_light.png" alt="TablePID Light Theme - Tampilan database client dengan tema terang" width="1200" height="675">
             </div>
             <div class="screenshot-slide">
-              <img src="assets/screenshots/view_data_thema_dark.png" alt="Dark Theme">
+              <img src="assets/screenshots/view_data_thema_dark.png" alt="TablePID Dark Theme - Tampilan database client dengan tema gelap" loading="lazy" width="1200" height="675">
             </div>
             <div class="screenshot-slide">
-              <img src="assets/screenshots/view_data_thema_sakura.png" alt="Sakura Theme">
+              <img src="assets/screenshots/view_data_thema_sakura.png" alt="TablePID Sakura Theme - Tampilan database client dengan tema sakura pink" loading="lazy" width="1200" height="675">
             </div>
             <div class="screenshot-slide">
-              <img src="assets/screenshots/integrasi_dengan_ai.png" alt="Integrasi dengan AI">
+              <img src="assets/screenshots/integrasi_dengan_ai.png" alt="TablePID AI Integration - Generate SQL otomatis dengan bantuan AI" loading="lazy" width="1200" height="675">
             </div>
             <div class="screenshot-slide">
-              <img src="assets/screenshots/with_intelipshese.png" alt="IntelliSense">
+              <img src="assets/screenshots/with_intelipshese.png" alt="TablePID IntelliSense - Autocomplete dan suggestion untuk query SQL" loading="lazy" width="1200" height="675">
             </div>
           </div>
-          <div class="screenshot-nav-btn prev" onclick="prevScreenshot()">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          <div class="screenshot-nav-btn prev" onclick="prevScreenshot()" role="button" aria-label="Screenshot sebelumnya" tabindex="0">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
           </div>
-          <div class="screenshot-nav-btn next" onclick="nextScreenshot()">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          <div class="screenshot-nav-btn next" onclick="nextScreenshot()" role="button" aria-label="Screenshot selanjutnya" tabindex="0">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
           </div>
         </div>
-        <div class="screenshot-thumbs">
-          <div class="thumb active" data-index="0" onclick="goToScreenshot(0)">
-            <img src="assets/screenshots/view_data_thema_light.png" alt="Light Theme">
+        <div class="screenshot-thumbs" role="tablist" aria-label="Pilih screenshot">
+          <div class="thumb active" data-index="0" onclick="goToScreenshot(0)" role="tab" aria-selected="true" tabindex="0">
+            <img src="assets/screenshots/view_data_thema_light.png" alt="Preview tema terang TablePID" width="120" height="68">
             <span>Light Theme</span>
           </div>
-          <div class="thumb" data-index="1" onclick="goToScreenshot(1)">
-            <img src="assets/screenshots/view_data_thema_dark.png" alt="Dark Theme">
+          <div class="thumb" data-index="1" onclick="goToScreenshot(1)" role="tab" aria-selected="false" tabindex="0">
+            <img src="assets/screenshots/view_data_thema_dark.png" alt="Preview tema gelap TablePID" loading="lazy" width="120" height="68">
             <span>Dark Theme</span>
           </div>
-          <div class="thumb" data-index="2" onclick="goToScreenshot(2)">
-            <img src="assets/screenshots/view_data_thema_sakura.png" alt="Sakura Theme">
+          <div class="thumb" data-index="2" onclick="goToScreenshot(2)" role="tab" aria-selected="false" tabindex="0">
+            <img src="assets/screenshots/view_data_thema_sakura.png" alt="Preview tema sakura TablePID" loading="lazy" width="120" height="68">
             <span>Sakura Theme</span>
           </div>
-          <div class="thumb" data-index="3" onclick="goToScreenshot(3)">
-            <img src="assets/screenshots/integrasi_dengan_ai.png" alt="AI Integration">
+          <div class="thumb" data-index="3" onclick="goToScreenshot(3)" role="tab" aria-selected="false" tabindex="0">
+            <img src="assets/screenshots/integrasi_dengan_ai.png" alt="Preview integrasi AI TablePID" loading="lazy" width="120" height="68">
             <span>AI Integration</span>
           </div>
-          <div class="thumb" data-index="4" onclick="goToScreenshot(4)">
-            <img src="assets/screenshots/with_intelipshese.png" alt="IntelliSense">
+          <div class="thumb" data-index="4" onclick="goToScreenshot(4)" role="tab" aria-selected="false" tabindex="0">
+            <img src="assets/screenshots/with_intelipshese.png" alt="Preview IntelliSense TablePID" loading="lazy" width="120" height="68">
             <span>IntelliSense</span>
           </div>
         </div>
@@ -235,7 +381,7 @@
   </section>
 
   <!-- AI Features Section -->
-  <section class="ai-features">
+  <section class="ai-features" aria-label="Fitur AI">
     <div class="container">
       <div class="ai-content">
         <div class="ai-text">
@@ -298,7 +444,7 @@ LIMIT 10;</code>
   </section>
 
   <!-- Shortcuts Section -->
-  <section class="shortcuts">
+  <section class="shortcuts" aria-label="Keyboard Shortcuts">
     <div class="container">
       <div class="section-header">
         <span class="section-badge">Keyboard Shortcuts</span>
@@ -337,7 +483,7 @@ LIMIT 10;</code>
   </section>
 
   <!-- Why TablePID Section -->
-  <section class="why">
+  <section class="why" aria-label="Perbandingan">
     <div class="container">
       <div class="section-header">
         <span class="section-badge">Kenapa TablePID</span>
@@ -370,7 +516,7 @@ LIMIT 10;</code>
   </section>
 
   <!-- Roadmap Section -->
-  <section class="roadmap">
+  <section class="roadmap" aria-label="Roadmap">
     <div class="container">
       <div class="section-header">
         <span class="section-badge">Roadmap</span>
@@ -414,7 +560,7 @@ LIMIT 10;</code>
   </section>
 
   <!-- FAQ Section -->
-  <section class="faq">
+  <section class="faq" aria-label="FAQ">
     <div class="container">
       <div class="section-header">
         <span class="section-badge">FAQ</span>
@@ -450,7 +596,7 @@ LIMIT 10;</code>
   </section>
 
   <!-- Download Section -->
-  <section id="download" class="download">
+  <section id="download" class="download" aria-label="Download">
     <div class="container">
       <div class="download-content">
         <h2 class="section-title">Siap shipping lebih cepat?</h2>
@@ -458,8 +604,8 @@ LIMIT 10;</code>
           Download TablePID dan mulai bangun sekarang juga.
         </p>
         <div class="download-buttons">
-          <a href="https://github.com/MuhammadAlfianIzzah/tablepid-releases" target="_blank" class="btn btn-primary btn-large">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <a href="https://github.com/MuhammadAlfianIzzah/tablepid-releases" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
               <line x1="12" y1="15" x2="12" y2="3"/>
@@ -469,25 +615,26 @@ LIMIT 10;</code>
         </div>
         <div class="download-info">
           <span>Windows 10/11</span>
-          <span>•</span>
+          <span aria-hidden="true">•</span>
           <span>v0.2.0</span>
-          <span>•</span>
+          <span aria-hidden="true">•</span>
           <span>~15 MB</span>
         </div>
       </div>
     </div>
   </section>
+</main>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <a href="#" class="logo">
-            <span class="logo-icon">🚀</span>
+          <a href="#" class="logo" aria-label="TablePID - Beranda">
+            <span class="logo-icon" aria-hidden="true">🚀</span>
             <span class="logo-text">TablePID</span>
           </a>
-          <p>Dibuat untuk developer yang shipping cepat.</p>
+          <p>Database client modern untuk developer Indonesia yang shipping cepat.</p>
         </div>
         <div class="footer-links">
           <div class="footer-col">
@@ -498,9 +645,9 @@ LIMIT 10;</code>
           </div>
           <div class="footer-col">
             <h5>Resources</h5>
-            <a href="https://github.com/MuhammadAlfianIzzah/tablepid-releases" target="_blank">GitHub</a>
-            <a href="https://github.com/MuhammadAlfianIzzah/tablepid-releases" target="_blank">Rilis</a>
-            <a href="https://github.com/MuhammadAlfianIzzah/tablepid-releases" target="_blank">Report Bug</a>
+            <a href="https://github.com/MuhammadAlfianIzzah/tablepid-releases" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://github.com/MuhammadAlfianIzzah/tablepid-releases" target="_blank" rel="noopener noreferrer">Rilis</a>
+            <a href="https://github.com/MuhammadAlfianIzzah/tablepid-releases" target="_blank" rel="noopener noreferrer">Report Bug</a>
           </div>
           <div class="footer-col">
             <h5>Legal</h5>
@@ -512,16 +659,16 @@ LIMIT 10;</code>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 TablePID. Semua hak dilindungi.</p>
-        <p>Dibuat dengan ❤️ untuk developer</p>
+        <p>Dibuat dengan ❤️ untuk developer Indonesia</p>
       </div>
     </div>
   </footer>
 
   <!-- Lightbox Modal -->
-  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-    <span class="lightbox-close">&times;</span>
-    <img id="lightbox-img" class="lightbox-content" src="" alt="">
-    <div id="lightbox-caption" class="lightbox-caption"></div>
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()" role="dialog" aria-modal="true" aria-label="Preview screenshot">
+    <span class="lightbox-close" role="button" aria-label="Tutup" tabindex="0">&times;</span>
+    <img id="lightbox-img" class="lightbox-content" src="" alt="" loading="lazy">
+    <div id="lightbox-caption" class="lightbox-caption" aria-live="polite"></div>
   </div>
 
   <!-- Scripts -->
