@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TablePID - Database Client Modern untuk Developer</title>
+  <meta name="description" content="Database client modern dengan bantuan SQL berbasis AI. Dibuat untuk developer yang bergerak cepat.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="TablePID - Database Client Modern">
+  <meta property="og:description" content="Stop berantem sama database. Mulai bangun lebih cepat.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tablepid.dev">
+  <meta property="og:image" content="assets/og-image.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TablePID - Database Client Modern">
+  <meta name="twitter:description" content="Stop berantem sama database. Mulai bangun lebih cepat.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <!-- GSAP + Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-content">
+        <a href="#" class="logo">
+          <span class="logo-icon">🚀</span>
+          <span class="logo-text">TablePID</span>
+        </a>
+        <div class="nav-links">
+          <a href="#features">Fitur</a>
+          <a href="#screenshots">Screenshot</a>
+          <a href="#download">Download</a>
+          <a href="https://github.com/tablepid/tablepid" target="_blank" class="nav-github">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+        </div>
+        <button class="mobile-menu" id="mobileMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-gradient"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          100% Gratis Digunakan
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line">Stop berantem</span>
+          <span class="title-line">sama database.</span>
+          <span class="title-gradient">Mulai bangun lebih cepat.</span>
+        </h1>
+        <p class="hero-description">
+          Database client modern untuk developer yang bergerak cepat.
+          SQL bertenaga AI, UI yang cantik, dan semua yang kamu butuhkan untuk shipping lebih cepat.
+        </p>
+        <div class="hero-buttons">
+          <a href="#download" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download untuk Windows
+          </a>
+          <a href="https://github.com/tablepid/tablepid/releases" target="_blank" class="btn btn-secondary">
+            Lihat Rilis
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17l9.2-9.2M17 17V7H7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="hero-databases">
+          <span class="db-label">Mendukung</span>
+          <div class="db-badges">
+            <span class="db-badge">PostgreSQL</span>
+            <span class="db-badge">MySQL</span>
+            <span class="db-badge">MariaDB</span>
+            <span class="db-badge">SQLite</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Fitur</span>
+        <h2 class="section-title">Semua yang kamu butuhkan</h2>
+        <p class="section-description">
+          Dibangun dari nol untuk workflow development modern
+        </p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card feature-card-large">
+          <div class="feature-icon">⚡</div>
+          <h3>AI SQL Assistant</h3>
+          <p>Generate, jelaskan, dan optimasi SQL dengan AI yang memahami schema database kamu.</p>
+          <div class="feature-tags">
+            <span>Generate</span>
+            <span>Explain</span>
+            <span>Optimize</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>SSH Tunnel</h3>
+          <p>Koneksi aman dengan dukungan SSH tunneling bawaan.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>ERD Generator</h3>
+          <p>Visualisasikan schema database kamu dengan diagram interaktif.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Query Editor</h3>
+          <p>Editor bertenaga Monaco dengan autocomplete dan syntax highlighting.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3>Schema Compare</h3>
+          <p>Bandingkan database berdampingan dan temukan perbedaan secara instan.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>10 Tema</h3>
+          <p>Dark, Light, Ocean, Forest, dan tema-tema cantik lainnya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots Section -->
+  <section id="screenshots" class="screenshots">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Screenshot</span>
+        <h2 class="section-title">Lihat aksinya</h2>
+        <p class="section-description">
+          Interface cantik yang dirancang untuk produktivitas
+        </p>
+      </div>
+      <div class="screenshots-showcase">
+        <div class="screenshot-main">
+          <div class="screenshot-placeholder">
+            <div class="placeholder-icon">📸</div>
+            <span>Interface Utama</span>
+            <p>Query editor dengan AI assistant</p>
+          </div>
+        </div>
+        <div class="screenshot-grid">
+          <div class="screenshot-item">
+            <div class="screenshot-placeholder small">
+              <span>ERD Diagram</span>
+            </div>
+          </div>
+          <div class="screenshot-item">
+            <div class="screenshot-placeholder small">
+              <span>Data Editor</span>
+            </div>
+          </div>
+          <div class="screenshot-item">
+            <div class="screenshot-placeholder small">
+              <span>Schema View</span>
+            </div>
+          </div>
+          <div class="screenshot-item">
+            <div class="screenshot-placeholder small">
+              <span>AI Chat</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Features Section -->
+  <section class="ai-features">
+    <div class="container">
+      <div class="ai-content">
+        <div class="ai-text">
+          <span class="section-badge">Bertenaga AI</span>
+          <h2 class="section-title">Copilot SQL kamu</h2>
+          <p class="section-description">
+            AI yang memahami schema database, versi, dan engine kamu.
+            Dapatkan SQL yang tepat setiap saat.
+          </p>
+          <ul class="ai-list">
+            <li>
+              <span class="check">✓</span>
+              Generate SQL dari bahasa alami
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Jelaskan query yang kompleks
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Optimasi untuk performa
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Mendukung Ollama, OpenAI, Anthropic, Gemini
+            </li>
+          </ul>
+        </div>
+        <div class="ai-demo">
+          <div class="demo-window">
+            <div class="demo-header">
+              <div class="demo-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span>AI Assistant</span>
+            </div>
+            <div class="demo-content">
+              <div class="demo-user">
+                <span class="demo-avatar">Kamu</span>
+                <p>Ambil 10 user dengan order terbanyak</p>
+              </div>
+              <div class="demo-ai">
+                <span class="demo-avatar ai">AI</span>
+                <div class="demo-code">
+                  <code>SELECT u.id, u.name, COUNT(o.id) as order_count
+FROM users u
+LEFT JOIN orders o ON o.user_id = u.id
+GROUP BY u.id, u.name
+ORDER BY order_count DESC
+LIMIT 10;</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shortcuts Section -->
+  <section class="shortcuts">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Keyboard Shortcuts</span>
+        <h2 class="section-title">Dibuat untuk kecepatan</h2>
+        <p class="section-description">
+          20+ shortcut untuk power user. Mirip kayak VSCode.
+        </p>
+      </div>
+      <div class="shortcuts-grid">
+        <div class="shortcut-card">
+          <kbd>Ctrl</kbd> + <kbd>Enter</kbd>
+          <span>Jalankan Query</span>
+        </div>
+        <div class="shortcut-card">
+          <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>
+          <span>Format SQL</span>
+        </div>
+        <div class="shortcut-card">
+          <kbd>Ctrl</kbd> + <kbd>E</kbd>
+          <span>Buka Editor</span>
+        </div>
+        <div class="shortcut-card">
+          <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd>
+          <span>AI Assistant</span>
+        </div>
+        <div class="shortcut-card">
+          <kbd>Ctrl</kbd> + <kbd>T</kbd>
+          <span>Tab Baru</span>
+        </div>
+        <div class="shortcut-card">
+          <kbd>F1</kbd>
+          <span>Semua Shortcut</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why TablePID Section -->
+  <section class="why">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Kenapa TablePID</span>
+        <h2 class="section-title">Bandingkan bedanya</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="compare-card old">
+          <h3>Tools Tradisional</h3>
+          <ul>
+            <li>❌ UI jadul</li>
+            <li>❌ Gak ada AI</li>
+            <li>❌ Berat dan lambat</li>
+            <li>❌ Tema terbatas</li>
+            <li>❌ Lisensi mahal</li>
+          </ul>
+        </div>
+        <div class="compare-vs">VS</div>
+        <div class="compare-card new">
+          <h3>TablePID</h3>
+          <ul>
+            <li>✓ UI modern dan cantik</li>
+            <li>✓ SQL bertenaga AI</li>
+            <li>✓ Cepat dan ringan</li>
+            <li>✓ 10 tema keren</li>
+            <li>✓ 100% Gratis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section class="roadmap">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Roadmap</span>
+        <h2 class="section-title">Yang akan datang</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item done">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">v0.1.0</span>
+            <h4>Rilis Pertama</h4>
+            <p>Fitur utama, integrasi AI, 10 tema</p>
+          </div>
+        </div>
+        <div class="timeline-item current">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">v0.2.0</span>
+            <h4>AI Lebih Pintar</h4>
+            <p>Konteks lebih baik, lebih banyak provider</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">v0.3.0</h4>
+            <h4>Fitur Tim</h4>
+            <p>Query bersama, tools kolaborasi</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">v1.0.0</span>
+            <h4>Rilis Stabil</h4>
+            <p>Siap produksi, ekosistem plugin</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">FAQ</span>
+        <h2 class="section-title">Pertanyaan umum</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>TablePID beneran gratis?</h4>
+          <p>Ya! TablePID 100% gratis digunakan. Gak ada biaya tersembunyi, gak ada tier premium.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Data saya aman?</h4>
+          <p>Tentu saja. Kredensial kamu dienkripsi di OS keychain. AI provider hanya menerima prompt kamu, bukan kredensial.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Database apa aja yang didukung?</h4>
+          <p>PostgreSQL, MySQL, MariaDB, dan SQLite. Lebih banyak lagi menyusul.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Bisa dipake offline?</h4>
+          <p>Bisa! Semua fitur bisa jalan offline kecuali AI. Untuk AI, kamu bisa pakai Ollama lokal untuk full offline.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Source code-nya open source?</h4>
+          <p>Source code-nya proprietary, tapi aplikasinya gratis untuk digunakan dan didistribusikan.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Gimana cara report bug?</h4>
+          <p>Buka issue di GitHub atau hubungi kami langsung. Kami fast response!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="download">
+    <div class="container">
+      <div class="download-content">
+        <h2 class="section-title">Siap shipping lebih cepat?</h2>
+        <p class="section-description">
+          Download TablePID dan mulai bangun sekarang juga.
+        </p>
+        <div class="download-buttons">
+          <a href="https://github.com/tablepid/tablepid/releases/latest" target="_blank" class="btn btn-primary btn-large">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download untuk Windows
+          </a>
+        </div>
+        <div class="download-info">
+          <span>Windows 10/11</span>
+          <span>•</span>
+          <span>v0.1.0</span>
+          <span>•</span>
+          <span>~15 MB</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">🚀</span>
+            <span class="logo-text">TablePID</span>
+          </a>
+          <p>Dibuat untuk developer yang shipping cepat.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Produk</h5>
+            <a href="#features">Fitur</a>
+            <a href="#screenshots">Screenshot</a>
+            <a href="#download">Download</a>
+          </div>
+          <div class="footer-col">
+            <h5>Resources</h5>
+            <a href="https://github.com/tablepid/tablepid" target="_blank">GitHub</a>
+            <a href="https://github.com/tablepid/tablepid/releases" target="_blank">Rilis</a>
+            <a href="https://github.com/tablepid/tablepid/issues" target="_blank">Report Bug</a>
+          </div>
+          <div class="footer-col">
+            <h5>Legal</h5>
+            <a href="#">Privasi</a>
+            <a href="#">Syarat</a>
+            <a href="#">Lisensi</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TablePID. Semua hak dilindungi.</p>
+        <p>Dibuat dengan ❤️ untuk developer</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
