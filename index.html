@@ -455,28 +455,50 @@ LIMIT 10;</code>
       </div>
       <div class="shortcuts-grid">
         <div class="shortcut-card">
-          <kbd>Ctrl</kbd> + <kbd>Enter</kbd>
-          <span>Jalankan Query</span>
+          <div class="shortcut-icon">⚡</div>
+          <div class="shortcut-keys"><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Enter</kbd></div>
+          <span class="shortcut-label">Jalankan Query</span>
         </div>
         <div class="shortcut-card">
-          <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>
-          <span>Format SQL</span>
+          <div class="shortcut-icon">✨</div>
+          <div class="shortcut-keys"><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Shift</kbd><span class="plus">+</span><kbd>F</kbd></div>
+          <span class="shortcut-label">Format SQL</span>
         </div>
         <div class="shortcut-card">
-          <kbd>Ctrl</kbd> + <kbd>E</kbd>
-          <span>Buka Editor</span>
+          <div class="shortcut-icon">📝</div>
+          <div class="shortcut-keys"><kbd>Ctrl</kbd><span class="plus">+</span><kbd>E</kbd></div>
+          <span class="shortcut-label">Buka Editor</span>
+        </div>
+        <div class="shortcut-card featured">
+          <div class="shortcut-icon">🤖</div>
+          <div class="shortcut-keys"><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Shift</kbd><span class="plus">+</span><kbd>A</kbd></div>
+          <span class="shortcut-label">AI Assistant</span>
+          <span class="shortcut-tag">Populer</span>
         </div>
         <div class="shortcut-card">
-          <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd>
-          <span>AI Assistant</span>
+          <div class="shortcut-icon">➕</div>
+          <div class="shortcut-keys"><kbd>Ctrl</kbd><span class="plus">+</span><kbd>T</kbd></div>
+          <span class="shortcut-label">Tab Baru</span>
         </div>
         <div class="shortcut-card">
-          <kbd>Ctrl</kbd> + <kbd>T</kbd>
-          <span>Tab Baru</span>
+          <div class="shortcut-icon">🔍</div>
+          <div class="shortcut-keys"><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Shift</kbd><span class="plus">+</span><kbd>P</kbd></div>
+          <span class="shortcut-label">Command Palette</span>
         </div>
         <div class="shortcut-card">
-          <kbd>F1</kbd>
-          <span>Semua Shortcut</span>
+          <div class="shortcut-icon">💾</div>
+          <div class="shortcut-keys"><kbd>Ctrl</kbd><span class="plus">+</span><kbd>S</kbd></div>
+          <span class="shortcut-label">Simpan Query</span>
+        </div>
+        <div class="shortcut-card">
+          <div class="shortcut-icon">🔄</div>
+          <div class="shortcut-keys"><kbd>Ctrl</kbd><span class="plus">+</span><kbd>R</kbd></div>
+          <span class="shortcut-label">Refresh Data</span>
+        </div>
+        <div class="shortcut-card">
+          <div class="shortcut-icon">❓</div>
+          <div class="shortcut-keys"><kbd>F1</kbd></div>
+          <span class="shortcut-label">Semua Shortcut</span>
         </div>
       </div>
     </div>
@@ -521,38 +543,57 @@ LIMIT 10;</code>
       <div class="section-header">
         <span class="section-badge">Roadmap</span>
         <h2 class="section-title">Yang akan datang</h2>
+        <p class="section-description">
+          Perjalanan kami membangun database client terbaik
+        </p>
       </div>
       <div class="timeline">
         <div class="timeline-item done">
-          <div class="timeline-marker"></div>
+          <div class="timeline-marker">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
           <div class="timeline-content">
-            <span class="timeline-date">v0.2.0</span>
+            <div class="timeline-header">
+              <span class="timeline-date done">v0.1.0</span>
+              <span class="timeline-status done">Selesai</span>
+            </div>
             <h4>Rilis Pertama</h4>
-            <p>Fitur utama, integrasi AI, 10 tema</p>
+            <p>Fitur utama, integrasi AI, 10 tema, support PostgreSQL & MySQL</p>
           </div>
         </div>
         <div class="timeline-item current">
-          <div class="timeline-marker"></div>
+          <div class="timeline-marker">
+            <div class="marker-pulse"></div>
+          </div>
           <div class="timeline-content">
-            <span class="timeline-date">v0.2.0</span>
+            <div class="timeline-header">
+              <span class="timeline-date current">v0.2.0</span>
+              <span class="timeline-status current">Sedang Dikerjakan</span>
+            </div>
             <h4>AI Lebih Pintar</h4>
-            <p>Konteks lebih baik, lebih banyak provider</p>
+            <p>Konteks lebih baik, lebih banyak provider, MariaDB & SQLite support</p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
-            <span class="timeline-date">v0.2.0</h4>
+            <div class="timeline-header">
+              <span class="timeline-date">v0.3.0</span>
+              <span class="timeline-status planned">Direncanakan</span>
+            </div>
             <h4>Fitur Tim</h4>
-            <p>Query bersama, tools kolaborasi</p>
+            <p>Query bersama, tools kolaborasi, shared connections</p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-marker"></div>
           <div class="timeline-content">
-            <span class="timeline-date">v0.2.0</span>
+            <div class="timeline-header">
+              <span class="timeline-date">v1.0.0</span>
+              <span class="timeline-status planned">Direncanakan</span>
+            </div>
             <h4>Rilis Stabil</h4>
-            <p>Siap produksi, ekosistem plugin</p>
+            <p>Siap produksi, ekosistem plugin, export/import tools</p>
           </div>
         </div>
       </div>
