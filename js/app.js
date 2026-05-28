@@ -589,7 +589,7 @@ function initScreenshotsThreeJS() {
    ======================================== */
 function initGSAP() {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    document.querySelectorAll('.hero-badge, .hero-title, .hero-description, .hero-buttons, .hero-databases').forEach(el => {
+    document.querySelectorAll('.hero-badge, .hero-title, .hero-description, .hero-buttons, .hero-databases, .db-badge').forEach(el => {
       el.style.opacity = '1';
       el.style.transform = 'none';
     });
