@@ -157,10 +157,11 @@ function initTextScramble() {
   if (!heroTitle) return;
   
   const phrases = [
-    'Mulai bangun lebih cepat.',
+    'Ship 10x lebih cepat.',
     'SQL tanpa ribet.',
-    'Database made easy.',
-    'Ship faster today.',
+    'AI yang ngerti context.',
+    'Gak perlu install berat.',
+    'Database made aesthetic.',
   ];
   
   const scrambler = new TextScramble(heroTitle);
@@ -605,51 +606,7 @@ function initGSAP() {
 
 /* Hero Animations - Cinematic */
 function initHeroAnimations() {
-  const tl = gsap.timeline({ 
-    defaults: { ease: 'power3.out' },
-    delay: 0.2
-  });
-  
-  tl.from('.hero-badge', {
-    opacity: 0,
-    scale: 0.5,
-    y: 30,
-    duration: 0.7,
-    ease: 'back.out(2)',
-  })
-  .from('.hero-title .title-line', {
-    opacity: 0,
-    y: 60,
-    duration: 0.8,
-    stagger: 0.15,
-    ease: 'power4.out',
-  }, '-=0.3')
-  .from('.hero-title .title-gradient', {
-    opacity: 0,
-    y: 40,
-    scale: 0.95,
-    duration: 0.8,
-  }, '-=0.5')
-  .from('.hero-description', {
-    opacity: 0,
-    y: 30,
-    duration: 0.6,
-  }, '-=0.4')
-  .from('.hero-buttons .btn', {
-    opacity: 0,
-    y: 25,
-    scale: 0.9,
-    duration: 0.5,
-    stagger: 0.1,
-    ease: 'back.out(1.5)',
-  }, '-=0.3')
-  .from('.hero-databases', {
-    opacity: 0,
-    y: 20,
-    duration: 0.5,
-  }, '-=0.2');
-  
-  // Floating badge pulse
+  // Floating badge pulse (safe: gsap.to, not .from)
   gsap.to('.badge-dot', {
     scale: 1.5,
     opacity: 0.3,
@@ -973,6 +930,18 @@ function initHoverEffects() {
         duration: 0.3, 
         ease: 'power2.out' 
       });
+    });
+  });
+  
+  // Stat items
+  document.querySelectorAll('.stat-item').forEach(stat => {
+    stat.addEventListener('mouseenter', () => {
+      gsap.to(stat, { scale: 1.08, y: -2, duration: 0.25, ease: 'back.out(2)' });
+      gsap.to(stat.querySelector('.stat-value'), { scale: 1.1, duration: 0.2, ease: 'power2.out' });
+    });
+    stat.addEventListener('mouseleave', () => {
+      gsap.to(stat, { scale: 1, y: 0, duration: 0.25, ease: 'power2.out' });
+      gsap.to(stat.querySelector('.stat-value'), { scale: 1, duration: 0.2, ease: 'power2.out' });
     });
   });
   
