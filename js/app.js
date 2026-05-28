@@ -647,15 +647,7 @@ function initHeroAnimations() {
     opacity: 0,
     y: 20,
     duration: 0.5,
-  }, '-=0.2')
-  .from('.db-badge', {
-    opacity: 0,
-    scale: 0.7,
-    y: 10,
-    duration: 0.4,
-    stagger: 0.06,
-    ease: 'back.out(2)',
-  }, '-=0.3');
+  }, '-=0.2');
   
   // Floating badge pulse
   gsap.to('.badge-dot', {
